@@ -1358,6 +1358,8 @@ public interface Map<K, V> {
      * @since 9
      */
     static <K, V> Map<K, V> of(K k1, V v1) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
         return new ImmutableCollections.Map1<>(k1, v1);
     }
 
@@ -1378,6 +1380,10 @@ public interface Map<K, V> {
      * @since 9
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2);
     }
 
@@ -1400,6 +1406,12 @@ public interface Map<K, V> {
      * @since 9
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3);
     }
 
@@ -1424,6 +1436,14 @@ public interface Map<K, V> {
      * @since 9
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4);
     }
 
@@ -1450,6 +1470,16 @@ public interface Map<K, V> {
      * @since 9
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5);
     }
 
@@ -1479,6 +1509,18 @@ public interface Map<K, V> {
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5,
                                K k6, V v6) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
+        Objects.requireNonNull(k6, "k6");
+        Objects.requireNonNull(v6, "v6");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5,
                                                k6, v6);
     }
@@ -1511,6 +1553,20 @@ public interface Map<K, V> {
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5,
                                K k6, V v6, K k7, V v7) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
+        Objects.requireNonNull(k6, "k6");
+        Objects.requireNonNull(v6, "v6");
+        Objects.requireNonNull(k7, "k7");
+        Objects.requireNonNull(v7, "v7");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5,
                                                k6, v6, k7, v7);
     }
@@ -1545,6 +1601,22 @@ public interface Map<K, V> {
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5,
                                K k6, V v6, K k7, V v7, K k8, V v8) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
+        Objects.requireNonNull(k6, "k6");
+        Objects.requireNonNull(v6, "v6");
+        Objects.requireNonNull(k7, "k7");
+        Objects.requireNonNull(v7, "v7");
+        Objects.requireNonNull(k8, "k8");
+        Objects.requireNonNull(v8, "v8");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5,
                                                k6, v6, k7, v7, k8, v8);
     }
@@ -1581,6 +1653,24 @@ public interface Map<K, V> {
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5,
                                K k6, V v6, K k7, V v7, K k8, V v8, K k9, V v9) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
+        Objects.requireNonNull(k6, "k6");
+        Objects.requireNonNull(v6, "v6");
+        Objects.requireNonNull(k7, "k7");
+        Objects.requireNonNull(v7, "v7");
+        Objects.requireNonNull(k8, "k8");
+        Objects.requireNonNull(v8, "v8");
+        Objects.requireNonNull(k9, "k9");
+        Objects.requireNonNull(v9, "v9");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5,
                                                k6, v6, k7, v7, k8, v8, k9, v9);
     }
@@ -1619,6 +1709,26 @@ public interface Map<K, V> {
      */
     static <K, V> Map<K, V> of(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5,
                                K k6, V v6, K k7, V v7, K k8, V v8, K k9, V v9, K k10, V v10) {
+        Objects.requireNonNull(k1, "k1");
+        Objects.requireNonNull(v1, "v1");
+        Objects.requireNonNull(k2, "k2");
+        Objects.requireNonNull(v2, "v2");
+        Objects.requireNonNull(k3, "k3");
+        Objects.requireNonNull(v3, "v3");
+        Objects.requireNonNull(k4, "k4");
+        Objects.requireNonNull(v4, "v4");
+        Objects.requireNonNull(k5, "k5");
+        Objects.requireNonNull(v5, "v5");
+        Objects.requireNonNull(k6, "k6");
+        Objects.requireNonNull(v6, "v6");
+        Objects.requireNonNull(k7, "k7");
+        Objects.requireNonNull(v7, "v7");
+        Objects.requireNonNull(k8, "k8");
+        Objects.requireNonNull(v8, "v8");
+        Objects.requireNonNull(k9, "k9");
+        Objects.requireNonNull(v9, "v9");
+        Objects.requireNonNull(k10, "k10");
+        Objects.requireNonNull(v10, "v10");
         return new ImmutableCollections.MapN<>(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5,
                                                k6, v6, k7, v7, k8, v8, k9, v9, k10, v10);
     }
@@ -1657,21 +1767,34 @@ public interface Map<K, V> {
     @SafeVarargs
     @SuppressWarnings("varargs")
     static <K, V> Map<K, V> ofEntries(Entry<? extends K, ? extends V>... entries) {
-        if (entries.length == 0) { // implicit null check of entries array
+        Objects.requireNonNull(entries, "entries");
+        if (entries.length == 0) {
             @SuppressWarnings("unchecked")
             var map = (Map<K,V>) ImmutableCollections.EMPTY_MAP;
             return map;
         } else if (entries.length == 1) {
-            // implicit null check of the array slot
-            return new ImmutableCollections.Map1<>(entries[0].getKey(),
-                    entries[0].getValue());
+            var entry = Objects.requireNonNull(entries[0], "entries[0]");
+            K k1 = Objects.requireNonNull(entry.getKey(), "entries[0].getKey()");
+            V v1 = Objects.requireNonNull(entry.getValue(), "entries[0].getValue()");
+            return new ImmutableCollections.Map1<>(k1, v1);
         } else {
             Object[] kva = new Object[entries.length << 1];
             int a = 0;
-            for (Entry<? extends K, ? extends V> entry : entries) {
-                // implicit null checks of each array slot
-                kva[a++] = entry.getKey();
-                kva[a++] = entry.getValue();
+            for (int i = 0; i < entries.length; i++) {
+                Entry<? extends K, ? extends V> entry = entries[i];
+                if (entry == null) {
+                    throw new NullPointerException("entries[" + i + "]");
+                }
+                Object key = entry.getKey();
+                if (key == null) {
+                    throw new NullPointerException("entries[" + i + "].getKey()");
+                }
+                kva[a++] = key;
+                Object value = entry.getValue();
+                if (value == null) {
+                    throw new NullPointerException("entries[" + i + "].getValue()");
+                }
+                key[a++] = value;
             }
             return new ImmutableCollections.MapN<>(kva);
         }
