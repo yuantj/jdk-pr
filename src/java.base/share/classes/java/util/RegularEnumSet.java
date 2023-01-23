@@ -33,14 +33,14 @@ package java.util;
  * @since 1.5
  * @serial exclude
  */
-final class RegularEnumSet<E extends Enum<E>> extends EnumSet<E> {
+sealed class RegularEnumSet<E extends Enum<E>> extends EnumSet<E> permits ImmutableRegularEnumSet {
     @java.io.Serial
     private static final long serialVersionUID = 3411599620347842686L;
     /**
      * Bit vector representation of this set.  The 2^k bit indicates the
      * presence of universe[k] in this set.
      */
-    private long elements = 0L;
+    long elements = 0L;
 
     RegularEnumSet(Class<E>elementType, Enum<?>[] universe) {
         super(elementType, universe);
@@ -76,7 +76,7 @@ final class RegularEnumSet<E extends Enum<E>> extends EnumSet<E> {
         return new EnumSetIterator<>();
     }
 
-    private class EnumSetIterator<E extends Enum<E>> implements Iterator<E> {
+    class EnumSetIterator<E extends Enum<E>> implements Iterator<E> {
         /**
          * A bit vector representing the elements in the set not yet
          * returned by this iterator.
